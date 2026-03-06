@@ -1,26 +1,28 @@
-# [Goodreads Datasets](https://mengtingwan.github.io/data/goodreads.html)
+# Goodreads Project
 
-#### NOTE: Our datasets have been moved! Please see our new [webpage](https://mengtingwan.github.io/data/goodreads.html) about how to download these datasets.
+#### Data were downloaded from [webpage](https://mengtingwan.github.io/data/goodreads.html) .
 
 The datasets were collected in late 2017 from [goodreads](https://goodreads.com). Details of the datasets are described in the [dataset website](https://mengtingwan.github.io/data/goodreads.html)
 
-**We collected these datasets for academic use only! Please do not redistribute them or use for commercial purposes.**
+## Goals
 
-## Citations
-If you are using our dataset, please cite the following papers:
+1. Explore high dimensional user data from Goodreads.
+2. Learn new-to-me approaches in NLP and implicit collaborative filtering/recommender systems.
+
+
+
+## Main Notebooks
+
+Used for my analyses so far:
+
+- [makeDBs_complete.ipynb](/makeDBs_complete.ipynb) and [makeDBs_romance.ipynb](/makeDBs_romance.ipynb): Create SQLite database and tables for data organization/storage.
+- [statistics.ipynb](/statistics.ipynb): EDA notebook to compute basic statistics of data and understand rating/review trends across genres.
+- [reviews_sentiment.ipynb](/reviews_sentiment.ipynb): Sentiment analysis on >3.4 million romance book reviews.
+- [romance_recommender.ipynb](/romance_recommender.ipynb): Implicit collaborative filtering on >16 million romance book ratings.
+
+
+
+## Dataset Citations
 
 - Mengting Wan, Julian McAuley, "[Item Recommendation on Monotonic Behavior Chains](https://github.com/MengtingWan/mengtingwan.github.io/raw/master/paper/recsys18_mwan.pdf)", in RecSys'18. [[bibtex](https://dblp.uni-trier.de/rec/bibtex/conf/recsys/WanM18)]
 - Mengting Wan, Rishabh Misra, Ndapa Nakashole, Julian McAuley, "[Fine-Grained Spoiler Detection from Large-Scale Review Corpora](https://github.com/MengtingWan/mengtingwan.github.io/raw/master/paper/acl19_mwan.pdf)", in ACL'19. [[bibtex](https://dblp.uni-trier.de/rec/bibtex/conf/acl/WanMNM19)]
-
-
-
-## Notebooks/Code Samples
-
-We've created several notebooks (in python 3.7) to illustrate how to download/read these datasets, and provide some basic explorations of the data.
-
-- [download.ipynb](/download.ipynb): If you prefer to download datasets without GUI. This notebook will show how to download files in bash/python.
-- [samples.ipynb](/samples.ipynb): This notebook will show how to read '.json.gz' files line-by-line and display sample records of each file.
-- [statistics.ipynb](/statistics.ipynb): This notebook will calculate some basic statistics of the datasets (except the largest complete interaction file 'goodreads_interactions.csv'). Running this notebook may take a while.
-- [distributions.ipynb](/distributions.ipynb): This notebook will operate on the complete interaction file 'goodreads_interactions.csv' and provide some explorations of the distributions of these interactions. **Note: Run this notebook only when you have LARGE memory (recommend 32g+)!!**
-- [reviews.ipynb](/reviews.ipynb): This notebook will calculate some statistics of the review datasets.
-
