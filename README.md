@@ -1,6 +1,6 @@
 # Goodreads Project
 
-#### Data were downloaded from [webpage](https://mengtingwan.github.io/data/goodreads.html) .
+#### Data were downloaded from [Mengting Wan](https://mengtingwan.github.io/data/goodreads.html) .
 
 The datasets were collected in late 2017 from [goodreads](https://goodreads.com). Details of the datasets are described in the [dataset website](https://mengtingwan.github.io/data/goodreads.html)
 
